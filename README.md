@@ -1,2 +1,2 @@
-# Pizza-Delivery
-Delivering pizza through this online delivery app
+# To-Do-App
+Creating list of things to-do on daily basis
