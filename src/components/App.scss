@@ -3,39 +3,44 @@
     padding: 0;
     box-sizing: border-box;
   }
+  $primaryColor: #fff;
+  $textColor: #000;
+  $formBtn: #ff6f47;
+
   body {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    color: white;
+    color: $primaryColor;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
   }
   header {
     font-size: 1rem;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
-  
-  header,
   form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  form input,
-  form button {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border: none;
-    background: white;
-  }
-  form button {
-    color: #ff6f47;
-    background: #f7fffe;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  form button:hover {
-    background: #ff6f47;
-    color: white;
+    input, button{
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        border: none;
+        background: $primaryColor;
+    }
+    button {
+        color: $formBtn;
+        background: #f7fffe;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    button:hover {
+        background: $formBtn;
+        color: $primaryColor;
+    }
   }
   .todo-container {
     display: flex;
@@ -50,9 +55,9 @@
   
   .todo {
     margin: 0.5rem;
-    background: white;
-    font-size: 1.5rem;
-    color: black;
+    background: $primaryColor;
+    font-size: 1rem;
+    color: $textColor;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,10 +72,10 @@
   
   .trash-btn,
   .complete-btn {
-    background: #ff6f47;
-    color: white;
+    background: $formBtn;
+    color: $primaryColor;
     border: none;
-    padding: 1rem;
+    padding: 0.7rem;
     cursor: pointer;
     font-size: 1rem;
   }
@@ -115,7 +120,7 @@
     overflow: hidden;
   }
   select {
-    color: #ff6f47;
+    color: $formBtn;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     width: 12rem;
@@ -127,7 +132,7 @@
     top: 0;
     right: 0;
     padding: 1rem;
-    background: #ff6f47;
+    background: $formBtn;
     cursor: pointer;
     pointer-events: none;
   }

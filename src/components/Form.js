@@ -7,9 +7,12 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
     }
     const onSubmit = (e) => {
         e.preventDefault();
+        // Created object using setTodos consisting of all todo items
         setTodos([
-            ...todos, {task: inputText, completed: false, id: Math.floor(Math.random() * 1000)}
+            ...todos, 
+            {task: inputText, completed: false, id: Math.floor(Math.random() * 1000)}
         ]);
+        // setting input text to empty after submit
         setInputText("");
     }
 
