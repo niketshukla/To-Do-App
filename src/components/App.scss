@@ -36,10 +36,10 @@
         background: #f7fffe;
         cursor: pointer;
         transition: all 0.3s ease;
-    }
-    button:hover {
-        background: $formBtn;
-        color: $primaryColor;
+        &:hover {
+            background: $formBtn;
+            color: $primaryColor;
+        }
     }
   }
   .todo-container {
