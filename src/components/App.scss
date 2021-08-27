@@ -71,7 +71,8 @@
   }
   
   .trash-btn,
-  .complete-btn {
+  .complete-btn,
+  .edit-btn {
     background: $formBtn;
     color: $primaryColor;
     border: none;
@@ -82,12 +83,16 @@
   .complete-btn {
     background: rgb(11, 212, 162);
   }
+  .edit-btn{
+    background-color: #4183d7;
+  }
   .todo-item {
     padding: 0rem 0.5rem;
   }
   
   .fa-trash,
-  .fa-check {
+  .fa-check,
+  .fa-edit {
     pointer-events: none;
   }
   

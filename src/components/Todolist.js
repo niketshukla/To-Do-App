@@ -1,11 +1,11 @@
 import React from 'react';
 import Todo from './Todo';
 
-const TodoList = ({ todos, setTodos }) => {
+const TodoList = ({ todos, setTodos, filterTodo, setInputText }) => {
     
-    const todoListItems = todos.map((listTodo) => {
+    const todoListItems = filterTodo.map((listTodo) => {
         return (
-            <Todo todos={todos} setTodos={setTodos} listTodo={listTodo} task={listTodo.task} key={listTodo.id} />
+            <Todo setInputText={setInputText} todos={todos} setTodos={setTodos} listTodo={listTodo} task={listTodo.task} key={listTodo.id} />
         );
     });
     return (
