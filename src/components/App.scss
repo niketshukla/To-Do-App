@@ -66,10 +66,16 @@
   .filter-todo {
     padding: 0.9rem;
   }
-  .todo li {
+  .todo li, .todo input {
     flex: 1;
   }
-  
+  .todo input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: $textColor;
+    padding: 0.7rem;
+  }
   .trash-btn,
   .complete-btn,
   .edit-btn {
@@ -85,6 +91,8 @@
   }
   .edit-btn{
     background-color: #4183d7;
+    // background-color: transparent;
+    // padding: 0px;
   }
   .todo-item {
     padding: 0rem 0.5rem;

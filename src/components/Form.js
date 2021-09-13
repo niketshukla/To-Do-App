@@ -21,9 +21,9 @@ const Form = ({ inputText, setInputText, todos, setTodos, setFilterOption }) => 
 
 
     return (
-        <form>
+        <form onSubmit={onSubmit}>
             <input value={inputText} type="text" className="todo-input" onChange={inputHandler} />
-            <button type="submit" className="todo-btn" onClick={onSubmit} >
+            <button type="submit" className="todo-btn" >
                 <i className="fas fa-plus-square"></i>
             </button>
             <div className="select" onChange={filterOptionHandler} >
