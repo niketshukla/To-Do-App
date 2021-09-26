@@ -34,8 +34,6 @@ const Todo = ({ task, setTodos, todos, listTodo }) => {
         // document.getElementById("edit-text").focus();
     }
     const addNewTodo = (e) => {
-        // e.preventDefault();
-    
         setTodos(todos.map((item) => {
             if (item.id === listTodo.id){
                 listTodo.task = editText
